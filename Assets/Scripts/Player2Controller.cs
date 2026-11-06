@@ -53,8 +53,7 @@ public class Player2Controller : MonoBehaviour
         ProcessMouseLook();
 
         if (Mouse.current != null &&
-            Mouse.current.rightButton.isPressed &&
-            fireTimer <= 0f)
+            Mouse.current.rightButton.isPressed && fireTimer <= 0f)
         {
             Shoot();
             fireTimer = fireRate;
